@@ -62,4 +62,9 @@ public class Book{
 		public void getDisplayText(){
 			System.out.println("Author" + author + "Title: " + title + " Decription: " + description);
 		}
+		
+		public String Quote(int quant){
+			if(isInStock)return "" + (price * quant);
+			return "Book not in stock";
+		}
 }
