@@ -1,6 +1,6 @@
 
 public class DataBase {
-	public Book getBook(String code){
+	public static Book getBook(String code){
 		Book book = new Book();
 		switch(code){
 		case "Java1001": book.setTitle("Head First Java");
@@ -34,8 +34,6 @@ public class DataBase {
 			book.setPrice(14.75);
 			break;
 		}
-		
-		
 		
 		return book;
 	}

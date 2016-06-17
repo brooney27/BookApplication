@@ -51,16 +51,16 @@ public class Book{
 			isInStock = false;
 		}
 		
-		public Book(String title){
+		public Book(String title, String author){
 			this.title = title;
-			author = "blank";
+			this.author = author;
 			description = "blank";
 			price = 0;
 			isInStock = false;
 		}
 		
-		public void getDisplayText(){
-			System.out.println("Author" + author + "Title: " + title + " Decription: " + description);
+		public String getDisplayText(){
+			return ("Author" + author + "Title: " + title + " Decription: " + description);
 		}
 		
 		public String Quote(int quant){
